@@ -14,7 +14,6 @@ mongo = PyMongo(app)
 
 # create an index route
 @app.route("/")
-
 def index():
 
     # find the collection "mars" in database
@@ -24,7 +23,6 @@ def index():
 
 # create the scrape route
 @app.route("/scrape")
-
 def scrape():
 
     # point to the mars mongo database
