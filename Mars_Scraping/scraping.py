@@ -102,9 +102,9 @@ def mars_facts():
     # assign column names and set index of DataFrame
     df.columns=['description', 'Mars', 'Earth']
     df.set_index('description', inplace=True)
-        
+
     # convert DataFrame into HTML ready code
-    return df.to_html()
+    return df.to_html(header=False, border='2').replace('description', '').replace('Mars - Earth Comparison', '')    
 
 def mars_hemi(browser):
 
